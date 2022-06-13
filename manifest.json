@@ -1,0 +1,49 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "mitmproxy",
+  "description": "Controls your mitmproxy directly from Ulauncher",
+  "developer_name": "Bruno Paz",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "kw",
+      "type": "keyword",
+      "name": "Keyword",
+      "default_value": "mitm"
+    },
+    {
+      "id": "proxy_port",
+      "type": "input",
+      "name": "Proxy Port",
+      "description": "The port that the proxy server will listen on",
+      "default_value": "8081"
+    },
+    {
+      "id": "web_port",
+      "type": "input",
+      "name": "Web Port",
+      "description": "The port that will serve the web ui (mitmweb)",
+      "default_value": "8082"
+    },
+    {
+      "id": "manage_system_proxy",
+      "type": "select",
+      "name": "Manage system proxy",
+      "description": "Indicates if this extension should automatically set your system level proxy configuration to the mitmproxy proxy settings",
+      "default_value": "true",
+      "options": [
+        {
+          "value": "false",
+          "text": "No"
+        },
+        {
+          "value": "true",
+          "text": "Yes"
+        }
+      ]
+    }
+  ]
+}

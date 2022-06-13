@@ -1,0 +1,2 @@
+class ProxyIsAlreadyRunningError(Exception):
+    pass
